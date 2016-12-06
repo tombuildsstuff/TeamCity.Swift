@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TeamCity.Swift tests">
+  <test name="fast">
+    <classes>
+      <class name="SimpleTest"/>
+    </classes>
+  </test>
+</suite>
+

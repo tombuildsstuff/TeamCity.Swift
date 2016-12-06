@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress AutowiredDependenciesInspection -->
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+        default-autowire="constructor"
+        >
+
+  <bean class="com.jonnyzzz.teamcity.plugins.node.agent.processes.ShellBasedExecutionProxy"/>
+  <bean class="com.jonnyzzz.teamcity.plugins.node.agent.processes.ProxyAwareExecutorImpl">
+    <constructor-arg>
+      <bean class="com.jonnyzzz.teamcity.plugins.node.agent.processes.ProcessExecutorImpl"/>
+    </constructor-arg>
+  </bean>
+
+
+  <bean class="com.jonnyzzz.teamcity.plugins.node.agent.processes.CompositeProcessFactoryImpl"/>
+
+  <bean class="uk.co.ibuildstuff.teamcity.swift.agent.build.SwiftBuildServiceFactory" />
+</beans>
