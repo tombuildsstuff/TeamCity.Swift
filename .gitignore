@@ -1,3 +1,4 @@
 .idea/workspace.xml
 out
 *kotlin-runtime*.jar
+.DS_Store

@@ -27,7 +27,9 @@ Once those are sorted - you can then:
 - Navigate to `http://localhost:8111/bs` in a browser
 
 ## Installation
-* Build the package via the instructions above
+* Obtain a copy of the package by either:
+  - Downloading a [pre-built package from GitHub](https://github.com/tombuildsstuff/TeamCity.Swift/releases)
+  - Building the package via the instructions above
 * Put the built plugin `.zip` file into `<TeamCity Data Directory>/plugins` folder
 * Restart the TeamCity Server
 * Open ```Administration | Plugins``` and check you see the plugin listed
